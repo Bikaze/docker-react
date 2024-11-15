@@ -6,4 +6,4 @@ before_install:
   - docker build -t bikaze/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run bikaze/docker-react npm run test -- --coverage
+  - docker run bikaze/docker-react npm run test -- --watchAll=false
